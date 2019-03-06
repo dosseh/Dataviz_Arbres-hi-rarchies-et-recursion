@@ -1,5 +1,5 @@
 
-# TP Dataviz
+# TP Dataviz Arbres, hiérarchies et récursion
 
 - Année : M1 iWOCS
 - Matière: Dataviz
