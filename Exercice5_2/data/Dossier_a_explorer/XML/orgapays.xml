@@ -1,0 +1,174 @@
+<?xml version = "1.0" encoding="UTF-8" ?>
+<orgapays xmlns="http://ust-infoserv.univlehavre.lan/~mf120453/XML">
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://ust-infoserv.univlehavre.lan/~mf120453/XML/ orgapays.xsd">
+    <orgapays_obj orga_id="UE" pays_id="Fra">
+        <date_adhesion>1957/03/25</date_adhesion>
+	<date_sortie>-------- </date_sortie>
+    </orgapays_obj>
+    <orgapays_obj orga_id="UE" pays_id="All">
+        <date_adhesion> 1957/03/25</date_adhesion>
+	<date_sortie>-------- </date_sortie>
+        
+    </orgapays_obj>
+    <orgapays_obj orga_id="UE" pays_id="Ita">
+        <date_adhesion>1957/03/25</date_adhesion>
+	<date_sortie>-------- </date_sortie>
+        
+    </orgapays_obj>
+    <orgapays_obj orga_id="UE" pays_id="Esp">
+        <date_adhesion>1986/01/01</date_adhesion>
+	<date_sortie>-------- </date_sortie>
+        
+    </orgapays_obj>
+    <orgapays_obj orga_id="UE" pays_id="RU">
+        <date_adhesion>1973/01/01</date_adhesion>
+	<date_sortie>-------- </date_sortie>
+        
+    </orgapays_obj>
+    <orgapays_obj orga_id="UE" pays_id="Bel">
+        <date_adhesion>1957/03/25</date_adhesion>
+	<date_sortie>-------- </date_sortie>
+        
+    </orgapays_obj>
+    <orgapays_obj orga_id="UE" pays_id="Fin">
+        <date_adhesion>1995/01/01</date_adhesion>
+	<date_sortie>-------- </date_sortie>
+        
+    </orgapays_obj>
+    <orgapays_obj orga_id="UE" pays_id="Grec">
+        <date_adhesion>1981/01/01</date_adhesion>
+	<date_sortie>-------- </date_sortie>
+        <date_sortie></date_sortie>
+    </orgapays_obj>
+    <orgapays_obj orga_id="UE" pays_id="Por">
+        <date_adhesion>1986/01/01</date_adhesion>
+	<date_sortie>-------- </date_sortie>
+    </orgapays_obj>
+    <orgapays_obj orga_id="UE" pays_id="Sue">
+        <date_adhesion>1995/01/01</date_adhesion>
+	<date_sortie>-------- </date_sortie>
+    </orgapays_obj>
+    
+    
+    <orgapays_obj orga_id="CERN" pays_id="Fra">
+        <date_adhesion>1954/09/24</date_adhesion>
+	<date_sortie>-------- </date_sortie>
+        
+    </orgapays_obj>
+    <orgapays_obj orga_id="CERN" pays_id="All">
+        <date_adhesion>1954/09/24</date_adhesion>
+	<date_sortie>-------- </date_sortie>
+    </orgapays_obj>
+    <orgapays_obj orga_id="CERN" pays_id="Ita">
+        <date_adhesion>1954/09/24</date_adhesion>
+	<date_sortie>-------- </date_sortie>
+    </orgapays_obj>
+    <orgapays_obj orga_id="CERN" pays_id="Esp">
+        <date_adhesion>1983/11/01</date_adhesion>
+	<date_sortie>-------- </date_sortie>
+    </orgapays_obj>
+    <orgapays_obj orga_id="CERN" pays_id="RU">
+        <date_adhesion>1954/09/24</date_adhesion>
+	<date_sortie>-------- </date_sortie>
+    </orgapays_obj>
+    <orgapays_obj orga_id="CERN" pays_id="SUI">
+        <date_adhesion>1954/09/24</date_adhesion>
+	<date_sortie>-------- </date_sortie>
+    </orgapays_obj>
+    <orgapays_obj orga_id="CERN" pays_id="Bel">
+        <date_adhesion>1954/09/24</date_adhesion>
+	<date_sortie>-------- </date_sortie>
+    </orgapays_obj>
+    <orgapays_obj orga_id="CERN" pays_id="Grec">
+        <date_adhesion>1954/09/24</date_adhesion>
+	<date_sortie>-------- </date_sortie>
+    </orgapays_obj>
+    <orgapays_obj orga_id="CERN" pays_id="Nor">
+        <date_adhesion>1954/09/24</date_adhesion>
+	<date_sortie>-------- </date_sortie>
+    </orgapays_obj>
+    <orgapays_obj orga_id="CERN" pays_id="Sue">
+        <date_adhesion>1954/09/24</date_adhesion>
+	<date_sortie>-------- </date_sortie>
+    </orgapays_obj>
+    <orgapays_obj orga_id="CERN" pays_id="Por">
+        <date_adhesion>1965/07/01</date_adhesion>
+	<date_sortie>-------- </date_sortie>
+    </orgapays_obj>    
+    <orgapays_obj orga_id="CERN" pays_id="Fin">
+        <date_adhesion>1991/01/01</date_adhesion>
+	<date_sortie>-------- </date_sortie>
+    </orgapays_obj>
+    
+    <orgapays_obj orga_id="AELE" pays_id="SUe">
+        <date_adhesion>1960/04/01</date_adhesion>
+        <date_sortie>1995/01/01</date_sortie>
+    </orgapays_obj>
+    <orgapays_obj orga_id="AELE" pays_id="RU">
+        <date_adhesion>1960/04/01</date_adhesion>
+        <date_sortie>1973/01/01</date_sortie>
+    </orgapays_obj>
+    <orgapays_obj orga_id="AELE" pays_id="Por">
+        <date_adhesion>1960/04/01</date_adhesion>
+        <date_sortie>1973/01/01</date_sortie>
+    </orgapays_obj>
+    <orgapays_obj orga_id="AELE" pays_id="Nor">
+        <date_adhesion>1960/05/03</date_adhesion>
+    </orgapays_obj>
+    <orgapays_obj orga_id="AELE" pays_id="Sui">
+        <date_adhesion>1960/05/03</date_adhesion>
+    </orgapays_obj>
+    <orgapays_obj orga_id="AELE" pays_id="ISL">
+        <date_adhesion>1970/01/01</date_adhesion>
+    </orgapays_obj>
+    
+    <orgapays_obj orga_id="EspaceShengen" pays_id="All">
+        <date_adhesion>1995/03/26</date_adhesion>
+	<date_sortie>-------- </date_sortie>
+    </orgapays_obj>
+    <orgapays_obj orga_id="EspaceShengen" pays_id="Por">
+        <date_adhesion>1995/03/26</date_adhesion>
+	<date_sortie>-------- </date_sortie>
+
+    </orgapays_obj>
+    <orgapays_obj orga_id="EspaceShengen" pays_id="Esp">
+        <date_adhesion>1995/03/26</date_adhesion>
+	<date_sortie>-------- </date_sortie>
+    </orgapays_obj>
+    <orgapays_obj orga_id="EspaceShengen" pays_id="Fra">
+        <date_adhesion>1995/03/26</date_adhesion>
+	<date_sortie>-------- </date_sortie>
+    </orgapays_obj>
+    <orgapays_obj orga_id="EspaceShengen" pays_id="Grec">
+        <date_adhesion>2000/03/26</date_adhesion>
+	<date_sortie>-------- </date_sortie>
+    </orgapays_obj>
+    <orgapays_obj orga_id="EspaceShengen" pays_id="Isl">
+        <date_adhesion>2001/03/25</date_adhesion>
+	<date_sortie>-------- </date_sortie>
+    </orgapays_obj>
+    <orgapays_obj orga_id="EspaceShengen" pays_id="Fin">
+        <date_adhesion>2001/03/25</date_adhesion>
+	<date_sortie>-------- </date_sortie>
+    </orgapays_obj>
+    <orgapays_obj orga_id="EspaceShengen" pays_id="Sue">
+        <date_adhesion>2001/03/25</date_adhesion>
+	<date_sortie>-------- </date_sortie>
+    </orgapays_obj>
+    <orgapays_obj orga_id="EspaceShengen" pays_id="Ita">
+        <date_adhesion>1997/10/26</date_adhesion>
+	<date_sortie>-------- </date_sortie>
+    </orgapays_obj>
+    <orgapays_obj orga_id="EspaceShengen" pays_id="Bel">
+        <date_adhesion>1997/12/01</date_adhesion>
+	<date_sortie>-------- </date_sortie>
+    </orgapays_obj>
+    <orgapays_obj orga_id="EspaceShengen" pays_id="Sui">
+        <date_adhesion>2008/12/12</date_adhesion>
+	<date_sortie>-------- </date_sortie>
+    </orgapays_obj>
+    
+    
+</orgapays>
+

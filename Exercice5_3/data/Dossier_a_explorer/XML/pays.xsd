@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- pays -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ust-infoserv.univlehavre.lan/~mf120453/" elementFormDefault="qualified">
+    <xs:element name="pays">
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="pays_obj">
+                    <xs:attribute name="pays_id" use="required" type="xs:ID"/>
+                    <xs:attribute name="devise_id" type="xs:IDREF"/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="pays_obj">
+        <xs:sequence>
+            <xs:element ref="pays_obj"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="pays_obj">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nom_pays"/>
+                <xs:element ref="superficie"/>
+                <xs:element ref="nb_habitants"/>
+                <xs:element minOccurs="0" ref="drapeau"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="nom_pays" type="xs:string"/>
+    <xs:element name="superficie" type="xs:string"/>
+    <xs:element name="nb_habitants" type="xs:string"/>
+    <xs:element name="drapeau" type="xs:string"/>
+</xs:schema>

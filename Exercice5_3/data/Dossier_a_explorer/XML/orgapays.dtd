@@ -1,0 +1,7 @@
+<!-- orgapPays -->
+<!ELEMENT orgapays (orgapays_obj)>
+    <!ELEMENT orgapays_obj (date_adhesion?,date_sortie?)>
+        <!ATTLIST orgapays pays_id IDREF #REQUIRED>
+        <!ATTLIST orgapays orga_id IDREF #REQUIRED>
+        <!ELEMENT date_adhesion (#PCDATA)>
+        <!ELEMENT date_sortie (#PCDATA)>

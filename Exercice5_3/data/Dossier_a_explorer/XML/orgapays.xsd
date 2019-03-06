@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- orgapPays -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ust-infoserv.univlehavre.lan/~mf120453/XML/ProjetXML/" elementFormDefault="qualified">
+    <xs:element name="orgapays">
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="orgapays_obj">
+                    <xs:attribute name="pays_id" use="required" type="xs:IDREF"/>
+                    <xs:attribute name="orga_id" use="required" type="xs:IDREF"/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="orgapays_obj">
+        <xs:sequence>
+            <xs:element ref="orgapays_obj"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="orgapays_obj">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" ref="date_adhesion"/>
+                <xs:element minOccurs="0" ref="date_sortie"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="date_adhesion" type="xs:string"/>
+    <xs:element name="date_sortie" type="xs:string"/>
+</xs:schema>

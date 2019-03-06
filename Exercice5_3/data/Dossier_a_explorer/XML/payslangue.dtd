@@ -1,0 +1,6 @@
+<!-- paysLangue -->
+<!-- -pays ne contient que des clé etrangères et aucun autre éléments en particulier, du coup on le renseigne comme etant EMPY -->
+<!ELEMENT payslangue (payslangue_obj)>
+    <!ELEMENT payslangue_obj EMPTY>
+        <!ATTLIST payslangue pays_id IDREF #REQUIRED>
+        <!ATTLIST payslangue orga_id IDREF #REQUIRED>

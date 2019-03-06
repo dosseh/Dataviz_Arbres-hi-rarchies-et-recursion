@@ -1,0 +1,11 @@
+<?xml version = "1.0" encoding="UTF-8" ?>
+<Devise xmlns="http://ust-infoserv.univlehavre.lan/~mf120453/XML">
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://ust-infoserv.univlehavre.lan/~mf120453/XML/ devise.xsd">
+    <devise_obj>euro</devise_obj>
+    <devise_obj>livre_sterling</devise_obj>
+    <devise_obj>franc_suisse</devise_obj>
+    <devise_obj>couronne_irlandaise</devise_obj>
+    <devise_obj>couronne_norvegienne</devise_obj>
+    <devise_obj>couronne_suedoise</devise_obj>
+</Devise>

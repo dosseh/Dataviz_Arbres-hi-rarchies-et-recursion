@@ -1,0 +1,5 @@
+<!-- langue -->
+<!-- afin d'eviter une encapsulation inutile on renseigne devise directement comme une valeur et non comme un element contenant un element ayant pour valeur son nom-->
+<!ELEMENT langue (langue_obj+)>
+	<!ELEMENT langue_obj (#PCDATA)>
+	<!ATTLIST langue langue_id ID #REQUIRED>

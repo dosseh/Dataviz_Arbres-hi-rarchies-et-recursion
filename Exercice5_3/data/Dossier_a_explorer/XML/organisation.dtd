@@ -1,0 +1,8 @@
+<!-- organisation -->
+<!ELEMENT organisation (organisation_obj+)>
+<!ELEMENT organisation_obj (nom_orga,siege,budget?,date_creation?)>
+    <!ATTLIST organisation orga_id ID #REQUIRED>
+    <!ELEMENT nom_orga (#PCDATA)>
+    <!ELEMENT siege (#PCDATA)>
+    <!ELEMENT budget (#PCDATA)>
+    <!ELEMENT date_creation (#PCDATA)>

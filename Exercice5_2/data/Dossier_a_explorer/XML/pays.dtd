@@ -1,0 +1,9 @@
+<!-- pays -->
+<!ELEMENT pays (pays_obj)>
+    <!ELEMENT pays_obj (nom_pays,superficie,nb_habitants,drapeau?)>
+        <!ATTLIST pays pays_id ID #REQUIRED>
+        <!ATTLIST pays devise_id IDREF #IMPLIED>
+        <!ELEMENT nom_pays (#PCDATA)>
+        <!ELEMENT superficie (#PCDATA)>
+        <!ELEMENT nb_habitants (#PCDATA)>
+        <!ELEMENT drapeau (#PCDATA)>

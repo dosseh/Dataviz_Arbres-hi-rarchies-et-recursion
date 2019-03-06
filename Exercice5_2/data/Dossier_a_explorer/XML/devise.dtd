@@ -1,0 +1,5 @@
+<!-- devise -->
+<!-- afin d'eviter une encapsulation inutile on renseigne devise directement comme une valeur et non comme un element contenant un element ayant pour valeur son nom-->
+<!ELEMENT devise (devise_obj+)>
+	<!ELEMENT devise_obj (#PCDATA)>
+	<!ATTLIST devise devise_id ID #REQUIRED>

@@ -1,0 +1,19 @@
+<?xml version = "1.0" encoding="UTF-8" ?>
+<langue xmlns="http://ust-infoserv.univlehavre.lan/~mf120453/XML">
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://ust-infoserv.univlehavre.lan/~mf120453/XML/ langue.xsd">
+    <langue_obj langue_id="1" >francais</langue_obj>
+    <langue_obj langue_id="2" >allemand</langue_obj>
+    <langue_obj langue_id="3" >anlais</langue_obj>
+    <langue_obj langue_id="4" >espagnol</langue_obj>
+    <langue_obj langue_id="5" >italien</langue_obj>
+    <langue_obj langue_id="6" >romanche</langue_obj>
+    <langue_obj langue_id="7" >norvegiens</langue_obj>
+    <langue_obj langue_id="8" >portugais</langue_obj>
+    <langue_obj langue_id="9" >mirandais</langue_obj>
+    <langue_obj langue_id="10" >suedois</langue_obj>
+    <langue_obj langue_id="11" >finnois</langue_obj>
+    <langue_obj langue_id="12" >neerlandais</langue_obj>
+    <langue_obj langue_id="13" >grec</langue_obj>
+
+</langue>

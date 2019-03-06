@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- langue -->
+<!--  afin d'eviter une encapsulation inutile on renseigne devise directement comme une valeur et non comme un element contenant un element ayant pour valeur son nom -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ust-infoserv.univlehavre.lan/~mf120453/XML/ProjetXML/" elementFormDefault="qualified">
+    <xs:element name="langue">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="langue_obj"/>
+            </xs:sequence>
+            <xs:attribute name="langue_id" use="required" type="xs:ID"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="langue_obj" type="xs:string"/>
+</xs:schema>

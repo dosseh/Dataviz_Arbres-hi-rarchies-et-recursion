@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- paysLangue -->
+<!-- -pays ne contient que des clé etrangères et aucun autre éléments en particulier, du coup on le renseigne comme etant EMPY -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ust-infoserv.univlehavre.lan/~mf120453/" elementFormDefault="qualified">
+    <xs:element name="payslangue">
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="payslangue_obj">
+                    <xs:attribute name="pays_id" use="required" type="xs:IDREF"/>
+                    <xs:attribute name="orga_id" use="required" type="xs:IDREF"/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="payslangue_obj">
+        <xs:sequence>
+            <xs:element ref="payslangue_obj"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="payslangue_obj">
+        <xs:complexType/>
+    </xs:element>
+</xs:schema>

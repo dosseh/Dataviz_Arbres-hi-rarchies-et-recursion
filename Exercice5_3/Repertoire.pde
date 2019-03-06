@@ -1,0 +1,116 @@
+class Repertoire extends Fichier implements MapModel {
+  MapLayout algo = new PivotBySplitSize();
+  Mappable[] items;
+  boolean contenuVisible;
+  boolean layoutValide;
+  float clarte;
+
+  public Repertoire(Repertoire parent, File fichier, int niveau, int ordre) {
+    super(parent, fichier, niveau, ordre);
+
+    String[] contenus = fichier.list();
+    if (contenus != null) {
+      contenus = sort(contenus);
+      items = new Mappable[contenus.length];
+      int n = 0;
+      for (int i=0; i<contenus.length; i++) {
+        if (contenus[i].equals(".") || contenus[i].equals("..")) {
+          continue;
+        }
+        File enfant = new File(fichier, contenus[i]);
+
+        if (enfant.isDirectory()) {
+          items[n++] = new Repertoire(this, enfant, niveau+1, n);
+        } else {
+          items[n++] = new Fichier(this, enfant, niveau+1, n);
+        }
+        size += items[n-1].getSize();
+      }
+      if (n != items.length) {
+        items = (Mappable[]) subset(items, 0, n);
+      }
+    } else {
+      items = new Mappable[0];
+    }
+  }
+
+  void verifieLayout() {
+    if (!layoutValide) {
+      if (getItemCount() != 0) {
+        algo.layout(this, bounds);
+      }
+      layoutValide = true;
+    }
+  }
+
+  void draw() {
+    verifieLayout();
+    calcBoite();
+    if (contenuVisible) {
+      for (int i=0; i<items.length; i++) {
+        items[i].draw();
+      }
+    } else {
+      super.draw();
+    }
+
+    if (contientSouris()) {
+      clarte *= 0.07;
+    } else {
+      clarte += (150 - clarte) * 0.07;
+    }
+    if (parent == racine) {
+      colorMode(RGB, 255);
+      fill(0, clarte);
+      rect(gauche, haut, droite, bas);
+    }
+  }
+
+  boolean mousePressed() { 
+    if (contientSouris()) {
+      if (contenuVisible) {
+        for (int i = 0; i < items.length; i++) {
+          if (((Fichier)items[i]).mousePressed()) {
+            return true;
+          }
+        }
+      } else { // not opened
+        if (mouseButton == LEFT) {
+          montreLeContenu();
+          colorByLastModified(fichier.getPath());
+          //print(fichier.getPath());
+        } else if (mouseButton == RIGHT) {
+          if (parent != racine)
+            parent.cacheLeContenu();
+        }
+        return true;
+      }
+    }
+
+    return false;
+  }
+
+  void cacheLeContenu() {
+    contenuVisible = false;
+  }
+
+  void montreLeContenu() {
+    if (parent != null)
+      contenuVisible = true;
+  }
+
+  Mappable[] getItems() {
+    return items;
+  }
+
+  int getItemCount() {
+    return items.length;
+  }
+
+  void majCouleurs() {
+    super.majCouleurs( );
+    for (int i = 0; i < items.length; i++) {
+      ((Fichier)items[i]).majCouleurs();
+    }
+  }
+}

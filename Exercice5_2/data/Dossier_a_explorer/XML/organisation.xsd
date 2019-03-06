@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- organisation -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ust-infoserv.univlehavre.lan/~mf120453/XML/ProjetXML/" elementFormDefault="qualified">
+    <xs:element name="organisation">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="organisation_obj"/>
+            </xs:sequence>
+            <xs:attribute name="orga_id" use="required" type="xs:ID"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="organisation_obj">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nom_orga"/>
+                <xs:element ref="siege"/>
+                <xs:element minOccurs="0" ref="budget"/>
+                <xs:element minOccurs="0" ref="date_creation"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="nom_orga" type="xs:string"/>
+    <xs:element name="siege" type="xs:string"/>
+    <xs:element name="budget" type="xs:string"/>
+    <xs:element name="date_creation" type="xs:string"/>
+</xs:schema>

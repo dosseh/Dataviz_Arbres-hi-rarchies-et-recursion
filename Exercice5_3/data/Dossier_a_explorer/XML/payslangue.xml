@@ -1,0 +1,25 @@
+<?xml version = "1.0" encoding="UTF-8" ?>
+<payslangue xmlns="http://ust-infoserv.univlehavre.lan/~mf120453/XML">
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://ust-infoserv.univlehavre.lan/~mf120453/XML/ payslangue.xsd">
+    <payslangue_obj pays_id="france" langue_id="francais"/>
+    <payslangue_obj pays_id="allemagne" langue_id="allemand"/>
+    <payslangue_obj pays_id="ITALIE" langue_id="italien"/>
+    <payslangue_obj pays_id="Espagne" langue_id="espagnol"/>
+    <payslangue_obj pays_id="RU" langue_id="anglais"/>
+    <payslangue_obj pays_id="Suisse" langue_id="allemand"/>
+    <payslangue_obj pays_id="Suisse" langue_id="romanche"/>
+    <payslangue_obj pays_id="Suisse" langue_id="francais"/>
+    <payslangue_obj pays_id="Islande" langue_id="islandais"/>
+    <payslangue_obj pays_id="Norvege" langue_id="norvegiens"/>
+    <payslangue_obj pays_id="Portugal" langue_id="portugais"/>
+    <payslangue_obj pays_id="Portugal" langue_id="mirandais"/>
+    <payslangue_obj pays_id="Suede" langue_id="suedois"/>
+    <payslangue_obj pays_id="Finlande" langue_id="finnois"/>
+    <payslangue_obj pays_id="Finlande" langue_id="suedois"/>
+    <payslangue_obj pays_id="Belgique" langue_id="francais"/>
+    <payslangue_obj pays_id="Belgique" langue_id="allemand"/>
+    <payslangue_obj pays_id="Belgique" langue_id="neerlandais"/>
+    <payslangue_obj pays_id="grece" langue_id="grec"/>
+    
+</payslangue>
